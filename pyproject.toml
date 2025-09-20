@@ -1,0 +1,23 @@
+[project]
+name = "aps"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "JIEEEN",email = "tjtpp009@korea.ac.kr"}
+]
+readme = "README.md"
+
+[tool.poetry]
+packages = [{include = "aps"}]
+
+[tool.poetry.scripts]
+aps = "aps.main:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+line-profiler = "^5.0.0"
+pyqt6 = "^6.9.1"
